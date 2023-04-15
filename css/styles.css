@@ -111,12 +111,15 @@ body {
   background-color: var(--secondary-txt-cl);
   padding-bottom: 188px;
   padding-top: 188px;
+  max-width: 1440px;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/peopleoffice.jpg);
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .banner-text {
@@ -199,20 +202,14 @@ body {
   overflow: hidden;
 }
 
-.dscr-icons {
+.dscr-icons-div {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 264px;
   height: 112px;
-  background: #f4f4fd;
+  background: var(--section-cl);
   border-radius: 4px;
-}
-
-.dscr-icons-list {
-  display: flex;
-  align-items: flex-start;
-  gap: 24px;
   margin-bottom: 8px;
 }
 /* Work */
@@ -233,7 +230,7 @@ body {
 
 .work-name {
   font-size: 36px;
-  line-height: 1.11;
+  line-height: 1.1;
   text-align: center;
   text-transform: capitalize;
   letter-spacing: 0.02em;
@@ -242,6 +239,10 @@ body {
 }
 
 /* Team */
+
+.team-container {
+  padding: 32px 0;
+}
 
 .team-list {
   display: flex;
@@ -274,11 +275,6 @@ body {
   margin-top: 8px;
 }
 
-.team-icons {
-  border-radius: 50%;
-  background-color: var(--accent-cl);
-}
-
 .team-icons-link {
   display: flex;
   justify-content: center;
@@ -286,6 +282,8 @@ body {
   width: 40px;
   height: 40px;
   fill: var(--section-cl);
+  background-color: var(--accent-cl);
+  border-radius: 50%;
 }
 
 .team-icons:hover,
@@ -294,28 +292,34 @@ body {
 }
 /* Customers */
 .customers-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 168px;
   height: 88px;
-  border: 1px solid var(--customers-icon);
-  border-radius: 5px;
 }
 
 .customers-list {
   display: flex;
-  align-items: flex-start;
   gap: 24px;
 }
 
 .customers-link {
-  fill: var(--customers-icon);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--customers-icon);
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--customers-icon);
+  border-radius: 4px;
 }
 
 .customers-link:hover,
 .customers-link:focus {
-  fill: var(--hover-cl);
+  color: var(--hover-cl);
+  border-color: var(--hover-cl);
+}
+
+.customers-svg-icon {
+  fill: currentColor;
 }
 /* Portfolio */
 
@@ -406,6 +410,8 @@ body {
   color: var(--background-cl);
   cursor: pointer;
   border: 1px solid transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* Footer */
@@ -437,41 +443,45 @@ body {
   margin-bottom: 16px;
 }
 
+.footer-container {
+  display: flex;
+  align-items: baseline;
+  margin-right: 120px;
+}
+
+.footer-social-media {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--background-cl);
+  margin-bottom: 16px;
+}
+
 .footer-icons-list {
   display: flex;
-  justify-content: center;
   gap: 16px;
 }
 
-.footer-icons {
-  border-radius: 50%;
-  background-color: var(--accent-cl);
+.footer-icons-li {
+  width: 40px;
+  height: 40px;
 }
 
 .footer-icons-link {
   display: flex;
-  justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
-  fill: var(--section-cl);
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  fill: var(--background-cl);
+  background-color: var(--accent-cl);
+  border-radius: 50%;
 }
 
-.footer-icons:hover,
-.footer-icons:focus {
+.footer-icons-link:hover,
+.footer-icons-link:focus {
   background-color: var(--footer-hover);
-}
-
-.footer-name {
-  font-weight: 500;
-  color: var(--background-cl);
-  justify-content: flex-start;
-  margin-bottom: 16px;
-}
-
-.footer-section {
-  display: inline-block;
-  margin: 0 0 32px 120px;
 }
 /* Reset */
 
