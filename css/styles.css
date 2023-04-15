@@ -286,8 +286,8 @@ body {
   border-radius: 50%;
 }
 
-.team-icons:hover,
-.team-icons:focus {
+.team-icons-link:hover,
+.team-icons-link:focus {
   background-color: var(--hover-cl);
 }
 /* Customers */
@@ -446,7 +446,7 @@ body {
 .footer-container {
   display: flex;
   align-items: baseline;
-  margin-right: 120px;
+  gap: 120px;
 }
 
 .footer-social-media {
@@ -474,7 +474,6 @@ body {
   justify-content: center;
   width: 100%;
   height: 100%;
-  fill: var(--background-cl);
   background-color: var(--accent-cl);
   border-radius: 50%;
 }
@@ -482,6 +481,10 @@ body {
 .footer-icons-link:hover,
 .footer-icons-link:focus {
   background-color: var(--footer-hover);
+}
+
+.footer-svg-icon{
+  fill: var(--section-cl);
 }
 /* Reset */
 
