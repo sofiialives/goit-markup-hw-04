@@ -239,12 +239,6 @@ body {
 }
 
 /* Team */
-
-.team-container-div {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
 .team-list {
   display: flex;
   align-items: center;
@@ -263,10 +257,11 @@ body {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-card {
+.team-card-div {
   text-align: center;
   padding: 32px 16px;
   border-radius: 0px 0px 4px 4px;
+  padding: 32px 0;
 }
 
 .team-icons-list {
